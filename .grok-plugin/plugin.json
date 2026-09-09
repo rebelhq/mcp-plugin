@@ -2,7 +2,7 @@
   "name": "rebel",
   "displayName": "Rebel",
   "version": "1.0.0",
-  "description": "Official Rebel MCP plugin. Search people and companies, unlock verified emails and mobiles, and build lists from Claude, Codex, Grok, or any MCP client.",
+  "description": "Official Rebel MCP plugin. Search people and companies, unlock verified emails and mobiles, and build lists.",
   "author": {
     "name": "Rebel",
     "email": "hello@getrebelos.com",

@@ -5,7 +5,7 @@ description: Connect and authenticate the Rebel MCP server. Use when the user in
 
 # Rebel setup
 
-Follow [SETUP.md](../../SETUP.md). The MCP server URL is `https://app.getrebelos.com/mcp`.
+Follow [SETUP.md](../../SETUP.md). Server URL: `https://app.getrebelos.com/mcp`. Plugin repo: `rebelhq/mcp-plugin`.
 
 1. Confirm the Rebel MCP server is enabled in this session.
 2. If tools are missing or return auth errors, have the user sign in (Claude Code: `/mcp` → Rebel). Do not ask for API keys — Rebel uses OAuth.

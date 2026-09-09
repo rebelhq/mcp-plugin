@@ -1,38 +1,66 @@
-# Rebel MCP plugin
+# Rebel MCP
 
-Official Rebel MCP plugin. Search people and companies, unlock verified emails and mobiles, and build lists from Claude, Codex, Grok, or any MCP client.
+Remote MCP server: [`https://app.getrebelos.com/mcp`](https://app.getrebelos.com/mcp)
 
-This repo is the public wrapper. The server lives at [`https://app.getrebelos.com/mcp`](https://app.getrebelos.com/mcp).
+Search people and companies, unlock verified emails and mobiles, and build lists. OAuth binds the connection to your Rebel workspace. Rebel surfaces and enriches data — it does not send.
 
-## Install
+## Plugins
+
+Installs the MCP server plus skills. Sign in with OAuth on first use.
 
 ### Claude Code
 
 ```bash
-claude plugin marketplace add itsrobinwhite/mcp-plugin
+claude plugin marketplace add rebelhq/mcp-plugin
 claude plugin install rebel@rebel
 ```
 
 Then `/mcp` → Rebel → sign in.
 
-### Any MCP client
+### Codex
 
-Paste the server URL and sign in with OAuth:
+```bash
+codex plugin marketplace add rebelhq/mcp-plugin
+codex plugin add rebel@rebel
+```
+
+Then `codex mcp login rebel`.
+
+### Cursor
 
 ```
-https://app.getrebelos.com/mcp
+/add-plugin rebelhq/mcp-plugin
 ```
 
-Signed-in setup guide: [app.getrebelos.com/mcp/setup](https://app.getrebelos.com/mcp/setup).
+Or add the server URL to `~/.cursor/mcp.json` (below).
 
-## What it does
+### Grok Build
 
-- Search people and companies
-- Unlock verified emails and mobiles (tokens, same rates as the app; misses are free)
-- Brief a contact, check balance and daily allowance
-- Create and fill lists
+```bash
+grok plugin install rebelhq/mcp-plugin --trust
+```
 
-Rebel surfaces and enriches data. It does not send outreach.
+## Any MCP client
+
+Use the server URL with streamable HTTP. Sign in when prompted.
+
+```json
+{
+  "mcpServers": {
+    "rebel": {
+      "url": "https://app.getrebelos.com/mcp"
+    }
+  }
+}
+```
+
+| Client | How |
+|---|---|
+| Claude | Customize → Connectors → Add custom connector |
+| ChatGPT | Settings → Connectors (Developer mode) |
+| Grok | grok.com/connectors → Custom |
+| Claude Code | `claude mcp add --transport http rebel https://app.getrebelos.com/mcp` |
+| Codex CLI | `[mcp_servers.rebel] url = "https://app.getrebelos.com/mcp"` then `codex mcp login rebel` |
 
 ## Privacy and terms
 

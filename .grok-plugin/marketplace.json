@@ -1,0 +1,19 @@
+{
+  "name": "rebel",
+  "owner": {
+    "name": "Rebel",
+    "email": "hello@getrebelos.com",
+    "url": "https://getrebelos.com"
+  },
+  "plugins": [
+    {
+      "name": "rebel",
+      "source": "./",
+      "description": "Official Rebel MCP plugin. Search people and companies, unlock verified emails and mobiles, and build lists.",
+      "version": "1.0.0",
+      "author": {
+        "name": "Rebel"
+      }
+    }
+  ]
+}

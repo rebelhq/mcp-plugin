@@ -1,36 +1,31 @@
 # Connect Rebel
 
-The Rebel MCP server is already declared in this plugin. After install, authenticate so tools run against your workspace.
-
 Server URL: `https://app.getrebelos.com/mcp`
 
 OAuth binds the connection to the workspace that was active when you signed in. Revoke anytime from Rebel.
 
-## Claude Code
+## Plugins
 
-1. Install this plugin (marketplace or `--plugin-dir`).
-2. Run `/mcp` and pick **Rebel**.
-3. Sign in with your Rebel account in the browser.
+```bash
+claude plugin marketplace add rebelhq/mcp-plugin && claude plugin install rebel@rebel
+codex plugin marketplace add rebelhq/mcp-plugin && codex plugin add rebel@rebel
+grok plugin install rebelhq/mcp-plugin --trust
+```
 
-If the browser does not open, use the URL Claude Code prints. Re-auth from `/mcp` if the session expires.
+Then sign in: Claude Code `/mcp` → Rebel · Codex `codex mcp login rebel` · Grok on first tool call.
 
-## Claude
+## MCP URL only
 
-1. Open **Customize → Connectors**.
-2. Add Rebel from the directory once listed, or **Add custom connector** with the server URL above.
-3. Connect and sign in.
+Paste `https://app.getrebelos.com/mcp` into the client’s custom connector settings, or:
 
-## Codex / ChatGPT
+```bash
+claude mcp add --transport http rebel https://app.getrebelos.com/mcp
+```
 
-1. Add Rebel from the Plugins directory once listed, or paste the server URL as a custom MCP connector (ChatGPT: Developer mode).
-2. Sign in with your Rebel account when prompted.
-
-## Grok
-
-1. Open grok.com/connectors → New Connector → Custom.
-2. Name it Rebel, paste the server URL, sign in.
-
-## Cursor and other MCP clients
+```toml
+[mcp_servers.rebel]
+url = "https://app.getrebelos.com/mcp"
+```
 
 ```json
 {
@@ -42,10 +37,12 @@ If the browser does not open, use the URL Claude Code prints. Re-auth from `/mcp
 }
 ```
 
-Approve the sign-in prompt when the client connects.
+Claude: Customize → Connectors → Add custom connector.  
+ChatGPT: Settings → Connectors (Developer mode).  
+Grok: grok.com/connectors → Custom.
 
 ## Check it worked
 
-Ask: "What's my Rebel token balance?" or "Search for people named …".
+Ask: "What's my Rebel token balance?"
 
 You need a Rebel account. Search is free; unlocking emails and mobiles spends tokens at the same rates as the app.
