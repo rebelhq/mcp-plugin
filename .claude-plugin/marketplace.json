@@ -1,0 +1,28 @@
+{
+  "name": "rebel",
+  "owner": {
+    "name": "Rebel",
+    "email": "hello@getrebelos.com",
+    "url": "https://getrebelos.com"
+  },
+  "metadata": {
+    "description": "Official Rebel MCP plugin.",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "rebel",
+      "source": "./",
+      "description": "Official Rebel MCP plugin. Search people and companies, unlock verified emails and mobiles, and build lists from Claude, Codex, Grok, or any MCP client.",
+      "author": {
+        "name": "Rebel",
+        "email": "hello@getrebelos.com",
+        "url": "https://getrebelos.com"
+      },
+      "homepage": "https://getrebelos.com",
+      "repository": "https://github.com/itsrobinwhite/mcp-plugin",
+      "license": "MIT",
+      "keywords": ["rebel", "mcp", "sales-intelligence", "prospecting", "b2b"]
+    }
+  ]
+}
