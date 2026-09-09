@@ -15,7 +15,7 @@ claude plugin marketplace add rebelhq/mcp-plugin
 claude plugin install rebel@rebel
 ```
 
-Then `/mcp` → Rebel → sign in.
+Then `/mcp` → Rebel → sign in. Optional: `/rebel:prospect HR directors at 50–200 person SaaS in Sweden`.
 
 ### Codex
 
