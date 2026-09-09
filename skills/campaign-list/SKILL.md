@@ -11,7 +11,7 @@ One motion, one persona, this week.
 
 Size the list to the motion: 30 seats is 30 names. One person’s outbound week is ~20. Not a TAM.
 
-If who they sell to is already locked, start there. If it isn’t, get that sentence first.
+If we already know who they win, start there. If we don’t, find that first.
 
 Every why is about *their* world this week — hired, in town, the event exists — never “fits the profile.”
 

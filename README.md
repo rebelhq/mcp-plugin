@@ -19,7 +19,7 @@ Then `/mcp` → Rebel → sign in.
 
 | Command | Walk away with |
 |---|---|
-| `/rebel:who-we-sell-to` | The sentence that ends the argument |
+| `/rebel:who-we-sell-to` | Who they actually win — then lock it |
 | `/rebel:campaign-list` | A Slack-named list, sized to this week |
 | `/rebel:account-map Klarna` | Who the first email goes to |
 
