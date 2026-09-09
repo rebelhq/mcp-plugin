@@ -15,7 +15,13 @@ claude plugin marketplace add rebelhq/mcp-plugin
 claude plugin install rebel@rebel
 ```
 
-Then `/mcp` → Rebel → sign in. Optional: `/rebel:prospect HR directors at 50–200 person SaaS in Sweden`.
+Then `/mcp` → Rebel → sign in.
+
+| Command | This week |
+|---|---|
+| `/rebel:who-we-sell-to` | One sentence: who we sell to, who we don't |
+| `/rebel:campaign-list` | ~25 people for one motion, named list |
+| `/rebel:account-map Klarna` | First meeting: one starter, two in the room |
 
 ### Codex
 
