@@ -1,23 +1,21 @@
 ---
 name: who-we-sell-to
-description: Write one sentence for who this team sells to — and lock it. Use when they run /rebel:who-we-sell-to, the ICP is wrong, or they keep hunting the wrong people.
+description: The team is hunting the wrong people. Write the one sentence that ends the argument — who we sell to, who we don't — and make it the default.
 user-invocable: true
 argument-hint: "[who you actually win]"
 ---
 
 # Who we sell to
 
-This is a 10-minute positioning conversation, not a form.
+End the argument.
 
-Output one sentence they can paste in Slack:
+Write one sentence a founder would say in a board meeting. Not a template, not “ICP” — something they’d stand behind.
 
-> We sell to [buyer] at [kind of company], not [who never buys].
+If they haven’t said who they win, ask once: title and company type, last quarter.
 
-"$ARGUMENTS" is the raw material. If it's empty, ask once: who did you actually win last quarter?
+If the pitch and the wins disagree, lead with that. Then the sentence that matches the wins.
 
-Read the sentence back. On a yes, that's the workspace from now on. A colour comment is not a new ICP.
-
-If who they won disagrees with who they just described, say so once — then offer the sentence that matches reality.
+Read it back once. Yes = that’s who we are now.
 
 ## Examples
 

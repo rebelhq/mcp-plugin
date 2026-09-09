@@ -1,19 +1,19 @@
 ---
 name: account-map
-description: Pick who to take the first meeting with at one company. Use when they run /rebel:account-map or name a target account.
+description: Who the first email goes to at this company — and who gets us the meeting if we need a champion.
 user-invocable: true
 argument-hint: "[company]"
 ---
 
 # Account map
 
-One company. Who do we take the first meeting with — not the org chart.
+We're trying to get a first meeting. Who does the email go to?
 
-"$ARGUMENTS" is the company, optionally the function. If they didn't say who buys, pick the people who would.
+One name. A second only if we need a champion to open the door.
 
-Name **one** person to start, and at most **two** more who need to be in the room. One line each on why.
+Why: why they'd take the meeting — not why they match a filter.
 
-If they want it saved, name the list after the account.
+Name the list after the account if they want it filed.
 
 ## Examples
 

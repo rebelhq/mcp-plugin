@@ -17,11 +17,11 @@ claude plugin install rebel@rebel
 
 Then `/mcp` → Rebel → sign in.
 
-| Command | This week |
+| Command | Walk away with |
 |---|---|
-| `/rebel:who-we-sell-to` | One sentence: who we sell to, who we don't |
-| `/rebel:campaign-list` | ~25 people for one motion, named list |
-| `/rebel:account-map Klarna` | First meeting: one starter, two in the room |
+| `/rebel:who-we-sell-to` | The sentence that ends the argument |
+| `/rebel:campaign-list` | A Slack-named list, sized to this week |
+| `/rebel:account-map Klarna` | Who the first email goes to |
 
 ### Codex
 
